@@ -67,7 +67,7 @@ def play_mode(difficulty, level_text, answers):
     wrongs = 0
     replaced = level_text
     while counter < 5 and wrongs < max_wrongs_wanted:
-        print "Current counter position is: " + str(counter)
+        #print "Current counter position is: " + str(counter)
         current_hole = placeholders[counter]
         #print "Current hole is: "+current_hole
         correct_answer = answers[counter]
