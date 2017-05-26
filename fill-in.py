@@ -60,7 +60,6 @@ def load_selected_difficulty(selected_difficulty):
         print "Invalid selection"
         return play_game()
 
-"""Experimental play_easy()"""
 def play_mode(difficulty, level_text, answers):
     """ Plays a full game in easy mode """ 
     counter = 0
@@ -91,43 +90,6 @@ def play_mode(difficulty, level_text, answers):
         print "Maximum number of tries exceeded!"
 
     return play_again()
-
-""" End Experimental easy """
-
-
-
-
-
-#def play_easy():
-""" Plays a full game in easy mode """ 
-""" counter = 0
-    max_wrongs_wanted = int(raw_input("What is the maximum number of wrong tries before the game resets? \n "))
-    wrongs = 0
-    replaced = easy_text
-    while counter < 5 and wrongs < max_wrongs_wanted:
-        print "Current counter position is: " + str(counter)
-        current_hole = placeholders[counter]
-        print "Current hole is: "+current_hole
-        correct_answer = easy_text_answers[counter]
-        #print "Correct answer is: "+correct_answer
-        print "Maximum nr of wrongs wanted: " + str(max_wrongs_wanted)
-        print "Number of wrong tries: "+ str(wrongs)
-        print "-" * 50 + "\n Here is the text for level easy: "
-        print replaced 
-        user_guess = raw_input("Your guess for hole " + current_hole + " :\n")
-        if user_guess == correct_answer:
-            correct_answer = easy_text_answers[counter]
-            replaced = replaced.replace(current_hole, correct_answer)
-            print replaced
-            counter += 1
-            print "Correct!"
-        else:
-            print "Wrong"
-            wrongs += 1
-    if wrongs >= max_wrongs_wanted:
-        print "Maximum number of tries exceeded!"
-
-    return play_again()"""
 
 def play_again():
     """ Allows user to restart a game after completing or getting kicked out. """
