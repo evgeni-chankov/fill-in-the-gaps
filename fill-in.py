@@ -69,12 +69,12 @@ def play_mode(difficulty, level_text, answers):
     while counter < 5 and wrongs < max_wrongs_wanted:
         print "Current counter position is: " + str(counter)
         current_hole = placeholders[counter]
-        print "Current hole is: "+current_hole
+        #print "Current hole is: "+current_hole
         correct_answer = answers[counter]
-        print "Correct answer is: "+correct_answer
-        print "Maximum nr of wrongs wanted: " + str(max_wrongs_wanted)
+        #print "Correct answer is: "+correct_answer
+        #print "Maximum nr of wrongs wanted: " + str(max_wrongs_wanted)
         print "Number of wrong tries: "+ str(wrongs)
-        print "-" * 50 + "\n Here is the text for level" + difficulty + ": "
+        print "-" * 50 + "\n Here is the text for level " + difficulty + ": "
         print replaced 
         user_guess = raw_input("Your guess for hole " + current_hole + " :\n")
         if user_guess == correct_answer:
