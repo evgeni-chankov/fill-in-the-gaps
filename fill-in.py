@@ -1,4 +1,4 @@
-""" The data for the easy level """
+""" Placeholder list """
 placeholders = ['__1__','__2__','__3__','__4__','__5__']
 
 easy_text = """
@@ -63,7 +63,7 @@ def load_selected_difficulty(selected_difficulty):
 def play_mode(difficulty, level_text, answers):
     """ Plays a full game in easy mode """ 
     counter = 0
-    max_wrongs_wanted = int(raw_input("What is the maximum number of wrong tries before the game resets? \n "))
+    max_wrongs_wanted = int(raw_input("What is the maximum number of wrong tries before the game resets? \n"))
     wrongs = 0
     replaced = level_text
     while counter < 5 and wrongs < max_wrongs_wanted:
@@ -73,7 +73,7 @@ def play_mode(difficulty, level_text, answers):
         correct_answer = answers[counter]
         #print "Correct answer is: "+correct_answer
         #print "Maximum nr of wrongs wanted: " + str(max_wrongs_wanted)
-        print "Number of wrong tries: "+ str(wrongs)
+        print "Current number of wrong tries: "+ str(wrongs)
         print "-" * 50 + "\n Here is the text for level " + difficulty + ": "
         print replaced 
         user_guess = raw_input("Your guess for hole " + current_hole + " :\n")
